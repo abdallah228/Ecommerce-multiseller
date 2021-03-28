@@ -38,7 +38,7 @@
 
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
+                    <!-- Right Side Of Navbar comment -->
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">

@@ -51,4 +51,10 @@ return redirect()->back();
 )]);
 return redirect()->back();
   }//end update
+
+
+  public function checkout()
+  {
+    return view('cart.checkout');
+  }
 }

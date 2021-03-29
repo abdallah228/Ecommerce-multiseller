@@ -44,7 +44,11 @@
                         <li class="nav-item">
                             <a class="nav-link p-0 m-0" href="{{ route('cart') }}"><i class="fas fa-shopping-cart fa-2x text-primary"></i>
                                 <div class="badge badge-danger">
-                                ({{$cartTotalQuantity = Cart::session(auth()->user()->id)->getContent()->count()}})
+                                @auth
+                                ({{Cart::session(Auth::user()->id)->getContent()->count()}})
+                                @else
+                                0
+                                @endauth
                                 </div>
                             </a>
                         </li>
